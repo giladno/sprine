@@ -1,0 +1,19 @@
+{
+    "root": true,
+    "parser": "babel-eslint",
+    "env": {
+        "node": true
+    },
+    "plugins": ["node"],
+    "extends": ["eslint:recommended", "plugin:node/recommended"],
+    "rules": {
+        "node/no-missing-require": 0,
+        "no-shadow": [
+            "warn",
+            {
+                "builtinGlobals": true,
+                "hoist": "all"
+            }
+        ]
+    }
+}
